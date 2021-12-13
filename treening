@@ -1,0 +1,19 @@
+vanus = int(input("Sisestage enda vanus: "))
+sugu = input("Sisetage enda sugu: ")
+treen = input("Sisestage treeni tüüp: ")
+maxping4N = 206-(0.88*vanus)
+maxping4M = 220-vanus
+if sugu =="M" or sugu =="m":
+    if str(treen) =="1":
+        print("Pulsisagedus peaks olema vahemikus " + str(round(0.5*maxping4M)) + " kuni " + str(round(0.7*maxping4M)) + ".")
+    if str(treen) =="2":
+        print("Pulsisagedus peaks olema vahemikus " + str(round(0.7*maxping4M)) + " kuni " + str(round(0.8*maxping4M)) + ".")
+    if str(treen) == "3":
+        print("Pulsisagedus peaks olema vahemikus " + str(round(0.8*maxping4M)) + " kuni " + str(round(0.87*maxping4M)) + ".")
+if sugu =="N" or sugu =="n":
+    if str(treen) =="1":
+        print("Pulsisagedus peaks olema vahemikus " + str(round(0.5*maxping4N)) + " kuni " + str(round(0.7*maxping4N)) + ".")
+    if str(treen) =="2":
+        print("Pulsisagedus peaks olema vahemikus " + str(round(0.7*maxping4N)) + " kuni " + str(round(0.8*maxping4N)) + ".")
+    if str(treen) == "3":
+        print("Pulsisagedus peaks olema vahemikus " + str(round(0.8*maxping4N)) + " kuni " + str(round(0.87*maxping4N)) + ".")
